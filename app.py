@@ -2,7 +2,7 @@
 import joblib, numpy as np, pandas as pd, streamlit as st
 from model import Hybrid, ScaledANN   # needed so joblib can load the models
 
-st.set_page_config(page_title="AAS Setting Time Predictor", layout="centered")
+st.set_page_config(page_title="AAS Setting Time Predictor", layout="wide")
 B = joblib.load("aas_hybrid_model.joblib")
 F, HI, HF = B["features"], B["models"]["IST"], B["models"]["FST"]
 
@@ -57,6 +57,8 @@ with tab2:
                          "IST pred": round(pi[k],1), "FST pred": round(pf[k],1), "Fit score": round(s[k],3),
                          "In window": bool(inside[k]), "Feasible candidates": int(inside.sum())})
         df = pd.DataFrame(rows).sort_values("Fit score")
+        first = ["Route", "IST pred", "FST pred", "Fit score", "In window", "Feasible candidates"]
+        df = df[first + [c for c in df.columns if c not in first]]   # results first, mix features after
         st.dataframe(df, hide_index=True)
         if not df["In window"].any(): st.error("No route reaches this window within the validated domain.")
         st.info("Lower fit score = closer to the target. Proposed mixes must be verified by laboratory testing.")
