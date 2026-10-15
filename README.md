@@ -48,4 +48,4 @@ Python 3.12, scikit-learn 1.8.0, SHAP 0.52.0, NumPy 2.4, pandas 3.0, XGBoost, Li
 
 ## Citation
 
-Please cite the article and the archived software (Zenodo, https://doi.org/10.5281/zenodo.23133386).
+Please cite the article and the archived software (Zenodo, https://doi.org/10.5281/zenodo.23389719).
