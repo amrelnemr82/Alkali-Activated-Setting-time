@@ -1,0 +1,66 @@
+{
+ "shap_importance": {
+  "IST": {
+   "Na2O_pct": 4.45,
+   "MS": 3.15,
+   "LS": 1.85,
+   "Alk_Bi": 1.37,
+   "has_Na2SiO3": 1.16,
+   "water_binder_ratio": 4.08,
+   "Na2SiO3_binder_ratio": 6.02
+  },
+  "FST": {
+   "Na2O_pct": 16.97,
+   "MS": 5.19,
+   "LS": 3.89,
+   "Alk_Bi": 11.71,
+   "has_Na2SiO3": 8.83,
+   "water_binder_ratio": 30.78,
+   "Na2SiO3_binder_ratio": 4.74
+  }
+ },
+ "inverse": {
+  "A: NaOH only": {
+   "features": {
+    "Na2O_pct": 0.192,
+    "MS": 0.0,
+    "LS": 0.261,
+    "Alk_Bi": 0.553,
+    "has_Na2SiO3": 0.0,
+    "water_binder_ratio": 0.0,
+    "Na2SiO3_binder_ratio": 0.0
+   },
+   "IST": 24.7,
+   "FST": 53.7,
+   "score": 0.06
+  },
+  "B: NaOH + Na2SiO3 (molar)": {
+   "features": {
+    "Na2O_pct": 0.239,
+    "MS": 1.137,
+    "LS": 0.422,
+    "Alk_Bi": 0.762,
+    "has_Na2SiO3": 1.0,
+    "water_binder_ratio": 0.0,
+    "Na2SiO3_binder_ratio": 0.244
+   },
+   "IST": 24.3,
+   "FST": 53.0,
+   "score": 0.03
+  },
+  "C: 48% Na2O + extra water": {
+   "features": {
+    "Na2O_pct": 0.078,
+    "MS": 1.065,
+    "LS": 0.42,
+    "Alk_Bi": 0.635,
+    "has_Na2SiO3": 1.0,
+    "water_binder_ratio": 0.216,
+    "Na2SiO3_binder_ratio": 0.291
+   },
+   "IST": 22.4,
+   "FST": 97.4,
+   "score": 0.942
+  }
+ }
+}

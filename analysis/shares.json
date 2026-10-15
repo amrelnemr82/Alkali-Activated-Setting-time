@@ -1,0 +1,30 @@
+{
+ "FST": {
+  "Alkali chemistry": 37.73779088152019,
+  "Water content": 42.22190695433947,
+  "Activator proportioning": 20.040302164140343
+ },
+ "FST_feat": {
+  "Na2O_pct": 20.669991070947415,
+  "MS": 6.320080358356015,
+  "LS": 4.742139347685085,
+  "Alk_Bi": 14.265771043139242,
+  "has_Na2SiO3": 10.74771945221676,
+  "water_binder_ratio": 37.479767606654384,
+  "Na2SiO3_binder_ratio": 5.774531121001101
+ },
+ "IST": {
+  "Alkali chemistry": 39.6740729060943,
+  "Water content": 26.85711873733007,
+  "Activator proportioning": 33.468808356575636
+ },
+ "IST_feat": {
+  "Na2O_pct": 20.15852933754717,
+  "MS": 14.283252590008654,
+  "LS": 8.375993428113704,
+  "Alk_Bi": 6.185877209705163,
+  "has_Na2SiO3": 5.23229097853848,
+  "water_binder_ratio": 18.481125309216367,
+  "Na2SiO3_binder_ratio": 27.282931146870474
+ }
+}
